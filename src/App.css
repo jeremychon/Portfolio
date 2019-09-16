@@ -1,33 +1,173 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+  background-color: rgb(245, 243, 242);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-left: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ---------- HEADER ---------- */
+.header {
+  background-color: rgb(245, 243, 242);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  z-index: 10;
+}
+
+.header-logo {
+  margin: 0 20px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-items {
+  margin: 0 20px;
+}
+
+/* ---------- HOME PAGE ---------- */
+.homepage {
+  background-color: rgb(235, 235, 237);
+  width: 100%;
+  height: 700px;
+  padding-top: 100px;
+}
+
+.homepage-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px;
+  height: 100px;
+  line-height: 60px;
+  margin-left: 40px;
+}
+
+#name {
+  font-weight: bold;
+}
+
+/* ---------- ABOUT ME ---------- */
+.aboutme {
+  width: 100%;
+  height: 950px;
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.aboutme-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 40px; 
+}
+
+.aboutme-desc {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 60%;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutme-par {
+  line-height: 40px;
+  text-align: justify;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aboutme-profile {
+  object-fit: cover;
+  height: 350px;
+  width: 350px;
+  border-radius: 100%;
+}
+
+.skills-list {
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skills-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+/* ---------- WORK ---------- */
+.work {
+  width: 100%;
+  height: 600px;
+  margin-top: 80px;
+}
+
+.work-all-projects {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.work-project {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+  display: inline-block;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.work-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.work-image-tama {
+  position: relative;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.work-image-flight {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+/* ---------- CONTACT ---------- */
+.contact {
+  width: 100%;
+  height: 600px;
+  padding-top: 40px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background-color: rgb(235, 235, 237);
+  width: 100%;
+  height: 60px;
 }

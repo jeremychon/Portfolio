@@ -4,7 +4,6 @@ import Homepage from './Homepage'
 import AboutMe from './AboutMe'
 import Work from './Work'
 import Contact from './Contact'
-import Footer from './Footer'
 import './App.css';
 
 class App extends React.Component {
@@ -50,7 +49,6 @@ class App extends React.Component {
         <AboutMe toAbout={this.toAbout}/>
         <Work toWork={this.toWork}/>
         <Contact toContact={this.toContact}/>
-        <Footer />
       </div>
     );
   }

@@ -7,8 +7,9 @@ class Homepage extends React.Component {
 		return (
 			<div className='homepage' ref={this.props.toHome}>
 				<div className='homepage-title'>
-					<div>Hello. I'm <span id='name'>Jeremy Chon</span></div>
-					<div>A full stack developer</div>
+					<div>Hello. I'm</div>
+					<div id='name'>Jeremy Chon</div>
+					<div>I'm a full stack software developer based in Chicago, IL. </div>
 				</div>
 			</div>
 

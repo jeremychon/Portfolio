@@ -82,8 +82,16 @@ class Work extends React.Component {
 					>
 						<img className='work-image-tama' src={Tamagotchi} alt='game character'/>
 						{this.state.tamaHover ? 
-							<div className='light-image'>
-								<h2>Tamagotchi</h2>
+							<div className='image-cover'>
+								<div className='image-cover-info'>
+									<h2>Tamagotchi</h2>
+									<p>The Tamagotchi game that I had made not only has a simple and clean design, but also has very simple gameplay. Feed it. Put it to sleep. Play with it. In addition, the character that is displayed is an original drawing designed by me.</p>
+									<p>Technologies: HTML, CSS, Javascript</p>
+								</div>
+								<div className='project-links'>
+									<a href="https://github.com/jeremychon/Tomagotchi" target='_blank' rel="noopener noreferrer">Code</a>
+									<a href="https://jeremychon.github.io/Tomagotchi/" target='_blank' rel="noopener noreferrer">Game</a>
+								</div>
 							</div> 
 						: null}
 					</div>
@@ -95,8 +103,16 @@ class Work extends React.Component {
 					>
 						<img className='work-image' src={MazeGame} alt="ship and bricks"/>
 						{this.state.mazeHover ? 
-							<div className='dark-image'>
-								<h2>Retro Maze Game</h2>
+							<div className='image-cover'>
+								<div className='image-cover-info'>
+									<h2>Retro Maze Game</h2>
+									<p>The Maze Game was inspired by my love for old school games. It not only has a retro feel, but the game play itself is extremely simple, which is also what drew me to creating this game. I wanted anyoen to be able to enjoy my game.</p>
+									<p>Technologies: HTML, CSS, Javascript, Canvas</p>
+								</div>
+								<div className='project-links'>
+									<a href="https://github.com/jeremychon/project-1-maze-game" target='_blank' rel="noopener noreferrer">Code</a>
+									<a href="https://jeremychon.github.io/project-1-maze-game/" target='_blank' rel="noopener noreferrer">Game</a>
+								</div>
 							</div> 
 						: null}
 					</div>
@@ -109,8 +125,16 @@ class Work extends React.Component {
 					>
 						<img className='work-image-flight' src={FlightDelay} alt="flight delay icon"/>
 						{this.state.flightHover ? 
-							<div className='dark-image'>
-								<h2>Flight Delay</h2>
+							<div className='image-cover'>
+								<div className='image-cover-info'>
+									<h2>Flight Delay</h2>
+									<p>My partner and I designed an app that allowed users to purchase insurance on delayed flights that we supported by Flight Delay. Using a third-party API, we were able to retrieve accurate flight information based on the user's search.</p>
+									<p>Technologies: ExpressJS, MongoDB</p>
+								</div>
+								<div className='project-links'>
+									<a href="https://github.com/woodsjm/project-2" target='_blank' rel="noopener noreferrer">Code</a>
+									<a href="https://up-in-the-air.herokuapp.com/" target='_blank' rel="noopener noreferrer">App</a>
+								</div>
 							</div> 
 						: null}
 					</div>
@@ -122,8 +146,16 @@ class Work extends React.Component {
 					>
 						<img className='work-image' src={WeightMate} alt="weight mate logo"/>
 						{this.state.weightHover ? 
-							<div className='dark-image'>
-								<h2>Weight Mate</h2>
+							<div className='image-cover'>
+								<div className='image-cover-info'>
+									<h2>Weight Mate</h2>
+									<p>Due to my love for fitness, I wanted to create a social fitness app that allowed users to create and share workout plans with other users. It was designed for people to be inspired by others or to find a source of accountability within the community of Weight Mate members.</p>
+									<p>Technologies: React, ExpressJS, MongoDB</p>
+								</div>
+								<div className='project-links'>
+									<a href="https://github.com/jeremychon/capstone-react" target='_blank' rel="noopener noreferrer">React Code</a>
+									<a href="https://github.com/jeremychon/capstone-express" target='_blank' rel="noopener noreferrer">Express Code</a>
+								</div>
 							</div> 
 						: null}
 					</div>

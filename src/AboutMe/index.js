@@ -11,7 +11,7 @@ class AboutMe extends React.Component {
 				<div className='aboutme-info'>
 					<div className='aboutme-desc'>
 						<h1 className='aboutme-title' >About me</h1>
-						<Divider horizontal />
+						<Divider horizontal/>
 						<p className='aboutme-par'>Growing up playing multiple team sports, I have always learned to value perseverance, cooperation, and respect to others. I enjoy being able to collaborate and utilize the minds of my peers to efficiently tackle a larger problem. As a software engineer, I continue to uphold these values not only to better myself, but to build up those around me.​</p>
 					</div>
 					<img className='aboutme-profile' src={profile} alt="me"/>

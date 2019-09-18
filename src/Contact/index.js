@@ -6,11 +6,24 @@ import ResumePDF from './JC_Resume.pdf'
 import { Form } from 'semantic-ui-react'
 
 class Contact extends React.Component {
-	// constructor() {
-	// 	super()
+	constructor() {
+		super()
 
-	// 	this.toContact = React.createRef()
-	// }
+		this.state = {
+			firstName: '',
+			lastName: '',
+			email: '',
+			comment: ''
+		}
+	}
+
+	handleChange = (e) => {
+		this.setState({
+			[e.currentTarget.name]: e.currentTarget.value
+		})
+	}
+
+
 
 	render() {
 		return (
@@ -52,14 +65,20 @@ class Contact extends React.Component {
 								label='First name' 
 								type="text" 
 								name='firstName'
+								placeholder='First'
+								value={this.state.firstName}
 								className='user-name'
+								onChange={this.handleChange}
 							/>
 							<Form.Input
 								required
-								label='Last name' 
+								label='Last' 
 								type="text" 
 								name='lastName'
+								placeholder='Last'
+								value={this.state.lastName}
 								className='user-name'
+								onChange={this.handleChange}
 							/>
 						</div>
 						<Form.Input
@@ -67,12 +86,18 @@ class Contact extends React.Component {
 							label='Email' 
 							type="text" 
 							name='email'
+							placeholder='Email'
+							value={this.state.email}
+							onChange={this.handleChange}
 						/>
-						<Form.Input
+						<Form.TextArea
 							required
 							label='Comment' 
 							type="text" 
 							name='comment'
+							rows={9}
+							value={this.state.comment}
+							onChange={this.handleChange}
 						/>
 					</Form>
 				</div>

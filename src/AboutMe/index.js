@@ -16,10 +16,7 @@ class AboutMe extends React.Component {
 					</div>
 					<img className='aboutme-profile' src={profile} alt="me"/>
 				</div>
-				<div>
-					<h1>Skills</h1>
-					<SkillsList />
-				</div>
+				<SkillsList />
 			</div>
 		)
 	}

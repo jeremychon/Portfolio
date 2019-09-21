@@ -2,7 +2,8 @@ import React from 'react';
 import Header from './Header'
 import Homepage from './Homepage'
 import AboutMe from './AboutMe'
-import Work from './Work'
+// import Work from './Work'
+import MyWork from './MyWork'
 import Contact from './Contact'
 import './App.css';
 
@@ -33,7 +34,7 @@ class App extends React.Component {
     }
 
     if (page === 'work') {
-      window.scrollTo(0, this.toWork.current.offsetTop)
+      window.scrollTo(0, this.toWork.current.offsetTop - 100)
     }
 
     if (page === 'contact') {
@@ -47,7 +48,7 @@ class App extends React.Component {
         <Header scrollToPage={this.scrollToPage}/>
         <Homepage toHome={this.toHome}/>
         <AboutMe toAbout={this.toAbout}/>
-        <Work toWork={this.toWork}/>
+        <MyWork toWork={this.toWork}/>
         <Contact toContact={this.toContact}/>
       </div>
     );

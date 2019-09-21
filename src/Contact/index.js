@@ -1,6 +1,5 @@
 import React from 'react'
 import LinkedIn from './Icons/linkedin.jpg'
-import GitHub from './Icons/github.png'
 import Email from './Icons/email.png'
 // import { Form, Button } from 'semantic-ui-react'
 
@@ -30,20 +29,13 @@ class Contact extends React.Component {
 				<h1 className='contact-title'>Get in touch</h1>
 				<div className='contact-body'>
 					<div className='contact-info'>
-						<p className='contact-par'>​If you'd like to get in contact with me, feel free to connect with me on LinkedIn or email me.</p>
+						<p className='contact-par'>​If you'd like to get in contact with me, feel free to click on the icons to connect with me via LinkedIn or email.</p>
 						<div className='contact-icons'>
 							<a href='https://www.linkedin.com/in/jeremy-chon/' target='_blank' rel="noopener noreferrer">
 								<img 
 									className='contact-icon' 
 									src={LinkedIn} 
 									alt="linkedin icon"
-								/>
-							</a>
-							<a href="https://github.com/jeremychon" target='_blank' rel="noopener noreferrer">
-								<img 
-									className='contact-icon' 
-									src={GitHub} 
-									alt="github icon"
 								/>
 							</a>
 							<a href='mailto:jaedee95@gmail.com'>

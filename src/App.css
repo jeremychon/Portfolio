@@ -8,26 +8,24 @@ body {
 
 h1 {
   margin-left: 5%;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   font-size: 40px;
 }
 
 /* ---------- HEADER ---------- */
 .header {
-  background-color: rgb(245, 243, 242);
+  background-color: rgba(245, 243, 242);
   width: 100%;
   height: 70px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  position: fixed;
   font-family: 'Raleway', sans-serif;
   z-index: 10;
 }
 
-.header-logo {
-  margin-left: 5%;
+.ui.menu>.item.header-logo {
+  margin: 0 0 0 5%;
   font-weight: bold;
 }
 
@@ -37,9 +35,11 @@ h1 {
 }
 
 .header-nav {
+  width: 100%;
   display: flex;
   flex-direction: row;
   margin: 0px;
+  color: white;
 }
 
 .nav-items {
@@ -48,15 +48,35 @@ h1 {
 
 /* ---------- HOME PAGE ---------- */
 .homepage {
-  background-color: rgb(245, 243, 242);
+  background-color: rgb(21, 26, 51);
   width: 100%;
   height: 100vh;
-  padding-top: 120px;
+  position: relative;
 }
 
 .homepage-title {
+  position: absolute;
+  color: white;
   font-family: 'Raleway', sans-serif;
   margin-left: 40px;
+  margin-top: 250px;
+  z-index: 10;
+}
+
+.homepage-learn {
+  width: 100%;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  bottom: 30px;
+}
+
+.homepage-learn-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 }
 
 #name {
@@ -71,74 +91,69 @@ h1 {
 /* ---------- ABOUT ME ---------- */
 .aboutme {
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /*padding-top: 40px;*/
-}
-
-.aboutme-title {
-  margin-bottom: 0px;
-}
-
-.aboutme-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
+  padding: 20px 0 85px 0;
 }
 
 .aboutme-desc {
+  width: 45%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60%;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .aboutme-par {
+  width: 80%;
   line-height: 40px;
   text-align: justify;
-  font-size: 18px;
-  text-align: center;
-  padding: 0 40px;
+  font-size: 15px;
+  padding-top: 10px;
 }
 
 .aboutme-profile {
   object-fit: cover;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   border-radius: 100%;
+  margin: 0 auto;
 }
 
 .skills-list {
-  margin: 10px auto 0 auto;
+  align-self: center;
+  height: 70vh;
+  width: 45%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
-.row {
-  padding: 0px;
+.skills-list-title {
+  font-size: 25px;
 }
 
-.skills {
-  text-align: center;
+.skills-list-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .skills-icon {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
 }
 
 /* ---------- WORK ---------- */
 .work {
   width: 100%;
-  height: 250vh;
-  /*padding-top: 80px;*/
+  height: 100vh;
 }
 
-div.ui.secondary.vertical.pointing.work-menu.menu {
+div.ui.pointing.secondary.vertical.work-menu.menu {
   margin-left: 5%;
   height: 150px;
 }
@@ -157,7 +172,7 @@ div.ui.secondary.vertical.pointing.work-menu.menu {
 
 .project {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 60vh;
 }
 
@@ -170,36 +185,23 @@ div.ui.secondary.vertical.pointing.work-menu.menu {
   -webkit-overflow-scrolling: touch;
 }
 
-/*.work-project {
-  width: 400px;
-  height: 400px;
-  margin: 20px;
-  border: 1px solid black;
-  border-radius: 50px;
-  display: inline-block;
-  flex: 0 0 auto;
-  text-align: center;
-  position: relative;
-}*/
-
-.work-image {
+.work-logo {
+  background-color: rgb(255, 255, 255);
   height: 300px;
-  width: 200px;
-  border-radius: 50px;
-}
-
-.image-cover {
-  background-color: rgba(34, 36, 47, .7);
-  color: white;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
+  width: 300px;
   border-radius: 50px;
   display: flex;
-  align-self: center;
-  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-logo-flight {
+  background-color: #4f5f76;
+  height: 300px;
+  width: 300px;
+  border-radius: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
 }
 
 .work-image-tama {
@@ -210,17 +212,22 @@ div.ui.secondary.vertical.pointing.work-menu.menu {
 
 .work-image-flight {
   position: relative;
-  height: 250px;
-  width: 250px;
-  margin-top: 30%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-self: center;
+}
+
+.work-image {
+  position: relative;
+  height: 300px;
+  width: 300px;
   border-radius: 50px;
 }
 
-.image-cover-info {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: auto;
+.project-info {
+  text-align: center;
+  width: 40%;
 }
 
 .project-links {
@@ -228,7 +235,8 @@ div.ui.secondary.vertical.pointing.work-menu.menu {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-  font-size: 20px;
+  font-size: 15px;
+  margin-top: 30px;
 }
 
 a:hover {
@@ -238,8 +246,8 @@ a:hover {
 /* ---------- CONTACT ---------- */
 .contact {
   width: 100%;
-  height: 110vh;
-  padding-top: 110px;
+  height: 90vh;
+  padding-top: 50px;
 }
 
 .contact-body {

@@ -25,7 +25,7 @@ class Contact extends React.Component {
 
 	render() {
 		return (
-			<div className='contact' ref={this.props.toContact}>
+			<div className='contact' name='Contact'>
 				<h1 className='contact-title'>Get in touch</h1>
 				<div className='contact-body'>
 					<div className='contact-info'>

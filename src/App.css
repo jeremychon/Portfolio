@@ -82,7 +82,7 @@ h1 {
 #name {
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
-  font-size: 55px;
+  font-size: 75px;
   padding: 40px 0px 50px 0px;
   display: flex;
   align-self: center;
@@ -150,12 +150,18 @@ h1 {
 /* ---------- WORK ---------- */
 .work {
   width: 100%;
-  height: 100vh;
+  height: 250vh;
 }
 
 div.ui.pointing.secondary.vertical.work-menu.menu {
   margin-left: 5%;
   height: 150px;
+}
+
+.work-menu-container {
+  height: 170vh;
+  width: 220px;
+  margin-left: 5%;
 }
 
 .work-projects {
@@ -167,13 +173,13 @@ div.ui.pointing.secondary.vertical.work-menu.menu {
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .project {
   display: flex;
   justify-content: space-evenly;
-  height: 60vh;
+  height: 50vh;
 }
 
 .work-all-projects {
@@ -246,7 +252,7 @@ a:hover {
 /* ---------- CONTACT ---------- */
 .contact {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   padding-top: 50px;
 }
 

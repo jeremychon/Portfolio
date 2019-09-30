@@ -3,18 +3,22 @@ import Tamagotchi from './Projects/Tamagotchi.png'
 import MazeGame from './Projects/Maze-Game.png'
 import FlightDelay from './Projects/flight-delay.png'
 import WeightMate from './Projects/weight_mate_logo.png'
-// import { Divider } from 'semantic-ui-react'
+import ScrollReveal from 'scrollreveal'
 
 class Projects extends React.Component {
+
+	componentDidMount() {
+		ScrollReveal().reveal('.project', {origin: 'right', duration: 2000, delay: 500})
+	}
+
 	render() {
 		return (
-			<div className='projects-list'>
-				{this.props.activeItem === 'Tamagotchi' ? 
-					<div className='project'>
+			<div className='projects-list' ref={this.props.projectsRef}>
+					<div className='project' name='Tamagotchi'>
 						<div className='project-info'>
 							<h2>Tamagotchi</h2>
 							<hr/>
-							<p>The Tamagotchi game that I had made not only has a simple and clean design, but also has very simple gameplay. Feed it. Put it to sleep. Play with it. In addition, the character that is displayed is an original drawing designed by me.</p>
+							<p>The Tamagotchi-style game that I had made not only has a simple and clean design, but also has very simple gameplay. Feed it. Put it to sleep. Play with it. In addition, the character that is displayed is an original drawing designed by me.</p>
 							<div className='project-links'>
 								<a href="https://github.com/jeremychon/Tomagotchi" target='_blank' rel="noopener noreferrer">Code</a>
 								<a href="https://jeremychon.github.io/Tomagotchi/" target='_blank' rel="noopener noreferrer">Game</a>
@@ -28,10 +32,7 @@ class Projects extends React.Component {
 							/>
 						</div>
 					</div>
-					: null
-				}
-				{this.props.activeItem === 'Maze Game' ?
-					<div className='project'>
+					<div className='project' name='Maze Game'>
 						<div className='project-info'>
 							<h2>Retro Maze Game</h2>
 							<hr/>
@@ -49,10 +50,7 @@ class Projects extends React.Component {
 							/>
 						</div>
 					</div>
-					: null
-				}
-				{this.props.activeItem === 'Flight Delay' ?
-					<div className='project'>
+					<div className='project' name='Flight Delay'>
 						<div className='project-info'>
 							<h2>Flight Delay</h2>
 							<hr/>
@@ -70,10 +68,7 @@ class Projects extends React.Component {
 							/>
 						</div>
 					</div>
-					: null
-				}
-				{this.props.activeItem === 'Weight Mate' ?
-					<div className='project'>
+					<div className='project' name='Weight Mate'>
 						<div className='project-info'>
 							<h2>Weight Mate</h2>
 							<hr/>
@@ -91,8 +86,6 @@ class Projects extends React.Component {
 							/>
 						</div>
 					</div>
-					: null
-				}
 			</div>
 		)
 	}

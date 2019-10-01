@@ -106,7 +106,7 @@ h1 {
 }
 
 .aboutme-par {
-  width: 80%;
+  width: 81%;
   line-height: 40px;
   text-align: justify;
   font-size: 15px;
@@ -247,6 +247,19 @@ div.ui.pointing.secondary.vertical.work-menu.menu {
 
 a:hover {
   text-decoration: underline;
+}
+
+.work-to-contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.work-in-touch {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px; 
 }
 
 /* ---------- CONTACT ---------- */

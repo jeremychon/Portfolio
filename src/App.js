@@ -94,7 +94,7 @@ class App extends React.Component {
             <Header scrollToPage={this.scrollToPage}/>
           </Sticky>
           <AboutMe toAbout={this.toAbout}/>
-          <MyWork toWork={this.toWork}/>
+          <MyWork toWork={this.toWork} scrollToPage={this.scrollToPage}/>
           <Contact toContact={this.toContact}/>
         </div>
       </div>

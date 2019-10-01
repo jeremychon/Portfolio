@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sticky, Menu } from 'semantic-ui-react'
+import { Sticky, Menu, Icon } from 'semantic-ui-react'
 import Projects from './Projects'
 import Scroll from 'react-scroll'
 import ScrollReveal from 'scrollreveal'
@@ -122,6 +122,16 @@ class MyWork extends React.Component {
 						</Sticky>
 					</div>
 					<Projects activeItem={this.state.activeItem} projectsRef={this.projectsRef}/>
+				</div>
+				<div className='work-to-contact'>
+					<div className='work-in-touch'>Get in touch with me!</div>
+					<Icon 
+						link 
+						size='big' 
+						name='angle down' 
+						style={{width: '100%'}}
+						onClick={this.props.scrollToPage.bind(null, 'contact')}
+					/>
 				</div>
 			</div>
 		)

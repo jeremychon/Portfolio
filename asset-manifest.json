@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.46794a9e.chunk.css",
+    "main.js": "/portfolio/static/js/main.157a0f41.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.157a0f41.chunk.js.map",
+    "runtime~main.js": "/portfolio/static/js/runtime~main.36963274.js",
+    "runtime~main.js.map": "/portfolio/static/js/runtime~main.36963274.js.map",
+    "static/css/2.1f0771ea.chunk.css": "/portfolio/static/css/2.1f0771ea.chunk.css",
+    "static/js/2.944cfe90.chunk.js": "/portfolio/static/js/2.944cfe90.chunk.js",
+    "static/js/2.944cfe90.chunk.js.map": "/portfolio/static/js/2.944cfe90.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.b02eb12f7597214b72e1bf4dae8a46ed.js": "/portfolio/precache-manifest.b02eb12f7597214b72e1bf4dae8a46ed.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.1f0771ea.chunk.css.map": "/portfolio/static/css/2.1f0771ea.chunk.css.map",
+    "static/css/main.46794a9e.chunk.css.map": "/portfolio/static/css/main.46794a9e.chunk.css.map",
+    "static/media/JC_Resume.pdf": "/portfolio/static/media/JC_Resume.bd746b45.pdf",
+    "static/media/Maze-Game.png": "/portfolio/static/media/Maze-Game.76a2abf6.png",
+    "static/media/Tamagotchi.png": "/portfolio/static/media/Tamagotchi.5adeb678.png",
+    "static/media/semantic.min.css": "/portfolio/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/css.png": "/portfolio/static/media/css.1aabe243.png",
+    "static/media/flask.png": "/portfolio/static/media/flask.192c541f.png",
+    "static/media/flight-delay.png": "/portfolio/static/media/flight-delay.dd3242d5.png",
+    "static/media/jquery.jpg": "/portfolio/static/media/jquery.9999c1a8.jpg",
+    "static/media/js.png": "/portfolio/static/media/js.e73667c4.png",
+    "static/media/mongodb.png": "/portfolio/static/media/mongodb.5a73c91c.png",
+    "static/media/nodejs.jpg": "/portfolio/static/media/nodejs.f7337d33.jpg",
+    "static/media/postgresql.png": "/portfolio/static/media/postgresql.ea92d658.png",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.febbdf76.jpg",
+    "static/media/react.png": "/portfolio/static/media/react.47ce6e77.png",
+    "static/media/sql.png": "/portfolio/static/media/sql.7a76cff5.png",
+    "static/media/weight_mate_logo.png": "/portfolio/static/media/weight_mate_logo.fcf2d644.png"
+  }
+}
